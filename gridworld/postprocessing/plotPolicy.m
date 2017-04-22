@@ -26,10 +26,12 @@ plot(xopt,yopt,'g.','Markersize',50);
 hold off;
 xlabel('x','Interpreter','Latex');
 ylabel('y','Interpreter','Latex');
-title('Discrete Q function','Interpreter','Latex');
+% title('Discrete Q function','Interpreter','Latex');
 % colormap('jet');
 cb = colorbar;
 ylabel(cb,'max(Q(s,a))','Interpreter','Latex');
+cb.TickLabelInterpreter = 'Latex';
+set(gca,'TickLabelInterpreter','latex');
 set(gcf,'color','w');
 
 end

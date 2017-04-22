@@ -108,6 +108,9 @@ load('data/lspi_rbf.mat');
 %% Post-processing:
 addpath('./postprocessing');
 
+% Plot the centres of the radial basis functions:
+plotBF(statelist);
+
 % Plot the convergence behaviour:
 plotRL(Ssarsa,SsarsaFA,Sql,SqlFA,Slspi,Slspi_rbf);
 % figure;

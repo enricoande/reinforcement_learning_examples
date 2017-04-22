@@ -102,8 +102,11 @@ load('data/lspi_rbf.mat');
 
 %% Post-processing:
 addpath('./postprocessing');
+% Plot the grid world:
+plotGridWorld(R,statelist,actionlist);
+
 % Plot the final policy to check for convergence:
-% plotPolicy(Qsarsa,statelist,actionlist,R);
+plotPolicy(Qsarsa,statelist,actionlist,R);
 % plotPolicy(Qql,statelist,actionlist,R);
 % plotPolicy(QsarsaFA,statelist,actionlist,R);
 % plotPolicy(QqlFA,statelist,actionlist,R);
