@@ -40,7 +40,7 @@ alpha = 0.4;                % learning rate
 epsilon = 0.6;              % exploration rate
 gamma = 0.95;               % discount factor
 steps = 3000;               % no. of steps per episode
-episodes = 1000;            % no. of episodes
+episodes = 4000;            % no. of episodes
 repeats = 100;              % no. of repeats
 
 %% Apply Sarsa to find the optimal policy:

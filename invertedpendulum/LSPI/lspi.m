@@ -39,9 +39,10 @@ for i=1:repeats
             policy = lstdq(2,10,1e-5,samples,policy);
         end        
         % Update the exploration rate:
-        epsilon = epsilon*0.99;
+        epsilon = epsilon*0.999;
         policy.explore = epsilon;
     end
+    disp(i);
 end
 
 %% Post-processing:
